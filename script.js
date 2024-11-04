@@ -70,4 +70,21 @@ document.getElementById("add-to-list").addEventListener("click", function() {
 
 
 
+ // Variable to track the current state
+ let isOn = false;
 
+ function toggleMode() {
+     if (isOn) {
+         // Change to OFF state
+         document.body.style.backgroundColor = 'white';
+         document.body.style.color = 'black';
+         document.getElementById('toggleImage').src = 'off .png'; // Set image to off
+     } else {
+         // Change to ON state
+         document.body.style.backgroundColor = 'black';
+         document.body.style.color = 'white';
+         document.getElementById('toggleImage').src = 'on.png'; // Set image to on
+     }
+     // Toggle the state
+     isOn = !isOn;
+    }

@@ -62,7 +62,7 @@ input, select {
     grid-column: span 3; /* Span 2 columns */
 }
 
-button {
+#add-to-list {
     width: 100%;
     padding: 12px;
     background-color: #1CCAB6;
